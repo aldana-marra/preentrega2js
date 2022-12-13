@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xk-budget</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+    <h2>Calculadora de gastos de viaje</h2>
+    </nav>
+
+    <div class="main">
+      <form id="vacationCalc">
+        <input type="text" placeholder="Ingrese destino" id="destiny" required />
+        <input type="number" placeholder="Ingrese su presupuesto" id="budget" required />
+        <input type="number" placeholder="Ingrese sus gastos de alojamiento" id="acomodation" required/>
+        <input type="number" placeholder="Ingrese sus gastos de transporte " id="transport" required />
+        <input type="number" placeholder="Ingrese sus gastos de comida" id="food" required />
+        <input type="submit" value="Calcular" class="btn blue z-depth-4" />
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="icons">
+        <h5><i class="fas fa-plane">Destino</i></h5>
+        <h5><i class="fas fa-wallet">Presupuesto</i></h5> 
+        <h5><i class="fas fa-money-bill-wave-alt">Gastos</i></h5>  
+      </div>
+      
+      <div class="data">
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
